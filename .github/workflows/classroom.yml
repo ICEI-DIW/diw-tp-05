@@ -1,7 +1,7 @@
 name: Autograding Tests
 'on':
 - push
-- repository_dispatch
+- repository_dispatch 
 permissions:
   checks: write
   actions: read
@@ -17,7 +17,7 @@ jobs:
         fetch-depth: 0
     - name: Verificacao GIT
       id: validate-git
-      uses: webtech-network/web-code-autograding/actions/command-grader-action@v1
+      uses: webtech-network/web-code-autograding/actions/command-grader-action@v2
       with:
         test-name: Verificacao GIT
         command: validateGITRepo
@@ -27,7 +27,7 @@ jobs:
         max-score: 100
     - name: Verificacao HTML
       id: validate-html
-      uses: webtech-network/web-code-autograding/actions/command-grader-action@v1
+      uses: webtech-network/web-code-autograding/actions/command-grader-action@v2
       with:
         test-name: Verificacao HTML
         command: validateHTMLFile
@@ -37,7 +37,7 @@ jobs:
         max-score: 100
     - name: Verificacao CSS
       id: validate-css
-      uses: webtech-network/web-code-autograding/actions/command-grader-action@v1
+      uses: webtech-network/web-code-autograding/actions/command-grader-action@v2 
       with:
         test-name: Verificacao CSS
         command: validateCSSFile
@@ -47,7 +47,7 @@ jobs:
         max-score: 100
     - name: Validate JS
       id: validate-js
-      uses: webtech-network/web-code-autograding/actions/command-grader-action@v1
+      uses: webtech-network/web-code-autograding/actions/command-grader-action@v2
       with:
         test-name: Verificacao JS
         command: validateJSFile
