@@ -1,4 +1,4 @@
-# Trabalho Prático - Semana 07
+# Trabalho Prático 05 - Semanas 7 e 8
 
 **Páginas de detalhes dinâmicas**
 
@@ -17,10 +17,27 @@ Leia o enunciado completo no Canvas.
 - Proposta de projeto escolhida:
 - Breve descrição sobre seu projeto:
 
-## Print da versão responsiva com CSS puro
+## Print da Home-Page
 
 <<  COLOQUE A IMAGEM AQUI >>
 
-## Print da versão responsiva com Bootstrap
+## Print da página de detalhes do item
 
 <<  COLOQUE A IMAGEM AQUI >>
+
+## Cole aqui abaixo a estrutura JSON utilizada no app.js
+
+```javascript
+const dados = [
+  {
+    "id": 1,
+    "titulo": "Prefeitura Lança Plano de Mobilidade Urbana",
+    "descricao": "Novo plano do transporte público.",
+    "conteudo": "A Prefeitura apresentou nesta segunda-feira um novo plano de mobilidade urbana.",
+    "categoria": "Cidades",
+    "autor": "Joana Ribeiro",
+    "data": "2025-03-30",
+    "imagem": "img/mobilidade.jpg"
+  }
+]
+```
